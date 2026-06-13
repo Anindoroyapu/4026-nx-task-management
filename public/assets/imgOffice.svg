@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="office">
+<path id="Vector" d="M28 44V16C28 10.3431 28 7.51472 26.2426 5.75736C24.4852 4 21.6568 4 16 4C10.3431 4 7.51472 4 5.75736 5.75736C4 7.51472 4 10.3431 4 16V32C4 37.6568 4 40.4852 5.75736 42.2426C7.51472 44 10.3431 44 16 44H28Z" stroke="var(--stroke-0, #7556FD)" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector_2" d="M13 22H11M21 22H19M13 14H11M13 30H11M21 14H19M21 30H19" stroke="var(--stroke-0, #7556FD)" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector_3" d="M37 30H35M37 22H35" stroke="var(--stroke-0, #7556FD)" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector_4" d="M36 16H28V44H36C39.7712 44 41.6568 44 42.8284 42.8284C44 41.6568 44 39.7712 44 36V24C44 20.2288 44 18.3431 42.8284 17.1716C41.6568 16 39.7712 16 36 16Z" stroke="var(--stroke-0, #7556FD)" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>

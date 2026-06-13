@@ -1,0 +1,156 @@
+@import url("./about.css");
+
+:root {
+  --ink: #f5f6fb;
+  --muted: #a7abbb;
+  --line: #2c3042;
+  --soft: #15192c;
+  --accent: #7556fd;
+  --shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+}
+
+body {
+  color: var(--ink);
+  background: radial-gradient(circle at 50% -10%, #13184a 0%, #06071c 58%, #050617 100%);
+}
+
+a { color: inherit; text-decoration: none; }
+
+.about-page {
+  background:
+    radial-gradient(circle at 8% 20%, rgba(117, 86, 253, 0.2) 0, rgba(117, 86, 253, 0) 34%),
+    radial-gradient(circle at 90% 18%, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0) 28%),
+    #050617;
+}
+
+.decor {
+  opacity: 0.1;
+  filter: saturate(0) brightness(1.7);
+}
+
+.arm,
+.tick {
+  filter: brightness(1.04) saturate(0.86);
+}
+
+.nav li {
+  color: #babdd0;
+}
+
+.nav li.active {
+  color: #ffffff;
+  border-color: #3a3e57;
+  background: #242944;
+  box-shadow: none;
+}
+
+ 
+
+.hero {
+  border-color: #30344a;
+  background: linear-gradient(180deg, rgba(23, 27, 44, 0.9) 0%, rgba(19, 21, 36, 0.88) 100%);
+}
+
+.hero::before {
+  background: rgba(10, 12, 24, 0.24);
+}
+
+.hero p {
+  color: #b2b6c8;
+}
+
+.value-block {
+  background: #101325;
+  border: 1.5px solid #2b2f43;
+}
+
+.item {
+  background: #181c31;
+  border-color: #31354a;
+}
+
+.icon {
+  border-color: #393d52;
+  background: #1f2338;
+}
+
+.item p {
+  color: #b0b5c7;
+}
+
+.journey {
+  background:
+    linear-gradient(180deg, #070921 0%, #06071d 100%),
+    radial-gradient(circle at 50% 20%, rgba(117, 86, 253, 0.2) 0, rgba(117, 86, 253, 0) 36%);
+}
+
+.card {
+  background: #1a1e34;
+  border-color: #343851;
+}
+
+.card h4,
+.card p {
+  color: #b0b5c8;
+}
+
+.cta-card {
+  border-color: #313651;
+  box-shadow: 0 4px 80px rgba(117, 86, 253, 0.22);
+  background: linear-gradient(130deg, rgba(17, 20, 39, 0.95), rgba(28, 24, 58, 0.9));
+}
+
+.cta-card::before {
+  background: radial-gradient(circle at 50% 40%, rgba(117, 86, 253, 0.24), rgba(117, 86, 253, 0));
+}
+
+.cta-card p {
+  color: #bdc0cf;
+}
+
+.btn-dark {
+  color: #0b0d1f;
+  background: #fff;
+}
+
+.btn-light {
+  color: #fff;
+  border-color: #4f5368;
+  background: #2a2e43;
+  box-shadow: none;
+}
+
+.floating {
+  border-color: #3e435b;
+  background: #23263a;
+}
+
+.stack-icons span {
+  border-color: #4a4e65;
+  background: #3c3f55;
+  box-shadow: none;
+}
+
+.floating p {
+  color: #c7cada;
+}
+
+footer {
+  background: #040518;
+}
+
+footer ul {
+  color: #b8bbca;
+}
+
+.socials {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.socials span {
+  background: #151931;
+}
+
+.footer-bottom {
+  color: #d9dbea;
+}

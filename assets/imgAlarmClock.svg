@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="alarm-clock">
+<path id="Vector" d="M34.1673 20.8332C34.1673 28.6572 27.8247 34.9998 20.0007 34.9998C12.1766 34.9998 5.83398 28.6572 5.83398 20.8332C5.83398 13.0091 12.1766 6.6665 20.0007 6.6665C27.8247 6.6665 34.1673 13.0091 34.1673 20.8332Z" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M9.80065 31.1719L5.83398 35.0052" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M30.2344 31.1133L34.1677 34.9966" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M8.33398 5L3.33398 10" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M36.666 10L31.666 5" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M20 13.3333V20.8333L23.3333 24.1667" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

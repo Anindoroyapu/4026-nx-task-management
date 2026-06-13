@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxky - Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/pricing.css">
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" media="only screen and (max-width: 900px)">
+</head>
+
+<body>
+    <div class="pricing-page">
+        <img class="decor d1" src="assets/imgVector.svg" alt="">
+        <img class="decor d2" src="assets/imgVector.svg" alt="">
+
+        <nav>
+            <div class="main-nav container-wide">
+                <img class="logo" src="assets/taxky.png" alt="Taxky">
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="feature.html">Features</a></li>
+                        <li class="active"><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">Know Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <button class="mode-toggle" type="button" onclick="window.location.href='pricing-dark.html'"> <img
+                            src="./assets/sun-icon.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div style=" display: flex; justify-content: start;  background-color: black; width: 100%; ">
+            <div class="w3-sidebar w3-bar-block w3-border-right " style=" display:none ; z-index: 1000;  "
+                id="mySidebar">
+                <div class="main-nav"
+                    style=" padding: 20px; display: flex; flex-direction: column; gap: 20px; align-items: start; justify-items: start !important;">
+                    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+                    <a href="index.html">Home Page</a>
+
+                    <a href="feature.html">Features</a>
+
+                    <a href="pricing.html" class="nav-item active">Pricing</a>
+
+                    <a href="about.html">Know Us</a>
+
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-header w3-white">
+            <a class="brand" href="./index.html" style="padding-left: 10px; " aria-label="AppFlow home">
+                <img class="logo" src="assets/taxky.png" alt="Taxky" style="height: 30px; width: auto;">
+
+            </a>
+            <div class="" style=" display: flex; align-items: center; ">
+                <button class="mode-toggle" type="button" onclick="window.location.href='index-dark.html'"><svg
+                        width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5833 10.3987C15.5836 10.9324 14.4417 11.2351 13.2292 11.2351C9.29092 11.2351 6.09827 8.04245 6.09827 4.10407C6.09827 2.89158 6.40087 1.74976 6.93469 0.750031C3.38971 1.58085 0.75 4.76264 0.75 8.56095C0.75 12.9916 4.34175 16.5834 8.77242 16.5834C12.5707 16.5834 15.7525 13.9437 16.5833 10.3987Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
+            </div>
+        </div>
+
+
+        <section class="hero wrap-1480">
+            <div class="title-box">
+                <h1>Modern, Scalable Pricing Designed for Growing Teams of <span>Every Size.</span></h1>
+                <p>Transparent plans built to support startups, growing teams, and large organizations.</p>
+            </div>
+
+            <div class="billing-toggle">
+                <button type="button" onclick="setBillingMode('monthly')">Monthly</button>
+                <button type="button" class="active" onclick="setBillingMode('annual')">Annual
+                    <span>-20%</span></button>
+            </div>
+
+            <div class="pricing-cards">
+                <article class="card">
+                    <h3>Starter Package</h3>
+                    <p>Perfect for individuals and small teams getting started.</p>
+                    <div class="price" data-monthly-price="9.99" data-annual-price="95.88">$9.99 <small>/month</small>
+                    </div>
+                    <button class="btn light">Get Started Today</button>
+                    <h4>Included Features:</h4>
+                    <ul>
+                        <li>Up to 10 projects</li>
+                        <li>Basic Kanban boards</li>
+                        <li>5GB secure storage</li>
+                        <li>Email support</li>
+                        <li>Basic task management</li>
+                        <li>Activity tracking</li>
+                    </ul>
+                </article>
+
+                <article class="card glow">
+                    <h3>Growth Package</h3>
+                    <p>Best for growing teams that need advanced collaboration.</p>
+                    <div class="price" data-monthly-price="29.99" data-annual-price="287.90">$29.99
+                        <small>/month</small></div>
+                    <button class="btn light">Get Started Today</button>
+                    <h4>Included Features:</h4>
+                    <ul>
+                        <li>Unlimited projects</li>
+                        <li>Advanced analytics</li>
+                        <li>Workflow automation</li>
+                        <li>Priority support</li>
+                        <li>Team dashboards</li>
+                        <li>API access</li>
+                        <li>File sharing</li>
+                        <!-- <li>Integrations</li> -->
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Business Package</h3>
+                    <p>Designed for teams managing complex workflows.</p>
+                    <div class="price" data-monthly-price="49.99" data-annual-price="479.90">$49.99
+                        <small>/month</small></div>
+                    <button class="btn dark">Get Business Package</button>
+                    <h4>Included Features:</h4>
+                    <ul>
+                        <li>Everything in Growth</li>
+                        <li>Advanced reporting</li>
+                        <li>Custom workflows</li>
+                        <li>Team performance insights</li>
+                        <li>Integration with external tools</li>
+                        <li>Role</li>
+                        <li>Permission management</li>
+                        <!-- <li>Extended data storage</li> -->
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Enterprise Package</h3>
+                    <p>Built for large organizations with advanced security needs.</p>
+                    <div class="price custom" data-monthly-label="Custom Pricing" data-annual-label="Custom Pricing">
+                        <img src="assets/imgGroup.svg" alt=""> /Custom Pricing</div>
+                    <button class="btn light">Request a Quote</button>
+                    <h4>Included Features:</h4>
+                    <ul>
+                        <li>Everything in Business</li>
+                        <li>SSO &amp; SAML authentication</li>
+                        <li>Dedicated support manager</li>
+                        <li>Custom integrations</li>
+                        <li>SLA uptime guarantee</li>
+                        <li>Advanced security controls</li>
+                        <li>Audit logs</li>
+                        <!-- <li>Compliance tools</li> -->
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <script>
+            function setBillingMode(mode) {
+                const isAnnual = mode === 'annual';
+                const toggleButtons = document.querySelectorAll('.billing-toggle button');
+                const priceFields = document.querySelectorAll('.pricing-cards .price');
+
+                toggleButtons.forEach((button) => button.classList.remove('active'));
+                toggleButtons[isAnnual ? 1 : 0].classList.add('active');
+
+                priceFields.forEach((price) => {
+                    if (price.classList.contains('custom')) {
+                        const label = isAnnual ? price.dataset.annualLabel : price.dataset.monthlyLabel;
+                        price.innerHTML = '<img src="assets/imgGroup.svg" alt=""> /' + label;
+                        return;
+                    }
+
+                    const amount = isAnnual ? price.dataset.annualPrice : price.dataset.monthlyPrice;
+                    const period = isAnnual ? 'year' : 'month';
+                    price.innerHTML = '$' + amount + ' <small>/' + period + '</small>';
+                });
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                setBillingMode('annual');
+            });
+        </script>
+
+        <section class="insights wrap-1480">
+            <div class="roi-box panel">
+                <div class="roi-left">
+                    <h2>Calculate Your ROI with Confidence</h2>
+                    <p>Quickly calculate potential returns and see how your investment drives results.</p>
+                    <div class="sliders">
+                        <div class="slider">
+                            <div><span>Team Size</span><strong>10 People</strong></div><i></i>
+                        </div>
+                        <div class="slider">
+                            <div><span>Average Annual Salary</span><strong>$75,000</strong></div><i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="roi-right">
+                    <p>Based on 8% productivity improvement</p>
+                    <h3>$60,000</h3>
+                </div>
+            </div>
+
+            <div class="compare panel">
+                <h2>Feature Simple Comparison.</h2>
+                <p>Quickly review and compare features across all plans in one place.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>All Features</th>
+                            <th>Core</th>
+                            <th>Growth</th>
+                            <th>Enterprise</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kanban Boards</td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame2.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>Task Automation</td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame2.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>Time Tracking</td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Analytics</td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>SSO &amp; SAML</td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Integrations</td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated Support</td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                        <tr>
+                            <td>SLA Guarantee</td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame4.svg" alt="no"></td>
+                            <td><img src="assets/imgFrame.svg" alt="yes"></td>
+                            <td class="act"><img src="assets/imgFrame1.svg" alt="edit"><img src="assets/imgFrame3.svg"
+                                    alt="menu"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="wrap-1480 faq-wrap">
+                <div class="faq-left">
+                    <h2>Your <span>Questions</span> About Workflow Management, Answered</h2>
+                    <p>Explore helpful insights and solutions to streamline the way your team works.</p>
+                    <button class="btn dark" style=" width: fit-content;">Contact Us</button>
+                </div>
+                <div class="faq-right">
+                    <article class="item" onclick="setFaqItem(this)">
+                        <h4>• Can I try the platform for free?</h4><img src="assets/imgAddCircleHalfDot.svg" alt="">
+                        <p>Yes. You can start with the free trial to explore core task management, team collaboration,
+                            and workspace setup before choosing a paid plan.</p>
+                    </article>
+                    <article class="item open" onclick="setFaqItem(this)">
+                        <h4>• What happens when my trial ends?</h4><img src="assets/imgRemoveCircleHalfDot.svg" alt="">
+                        <p>When your trial ends, you can choose to upgrade to any of our paid plans to continue using
+                            the platform without interruption. If you do not upgrade, your account will remain inactive
+                            until a plan is selected.</p>
+                    </article>
+                    <article class="item" onclick="setFaqItem(this)">
+                        <h4>• Can I change plans later?</h4><img src="assets/imgAddCircleHalfDot.svg" alt="">
+                        <p>Yes. You can upgrade or switch plans whenever your team grows or your workflow changes.
+                            Billing is adjusted based on the plan you pick next.</p>
+                    </article>
+                    <article class="item" onclick="setFaqItem(this)">
+                        <h4>• Do you offer discounts for annual plans?</h4><img src="assets/imgAddCircleHalfDot.svg"
+                            alt="">
+                        <p>Annual billing includes a discount compared to monthly billing, which is why the toggle shows
+                            the yearly plan with a lower effective rate.</p>
+                    </article>
+                    <article class="item" onclick="setFaqItem(this)">
+                        <h4>• Is my data secure on the platform?</h4><img src="assets/imgAddCircleHalfDot.svg" alt="">
+                        <p>Yes. Your workspace data is protected with secure access controls, encrypted storage, and
+                            role-based permissions for your team.</p>
+                    </article>
+                    <article class="item" onclick="setFaqItem(this)">
+                        <h4>• Do you offer support for teams?</h4><img src="assets/imgAddCircleHalfDot.svg" alt="">
+                        <p>Yes. Paid plans include team support options, and higher tiers unlock priority assistance and
+                            dedicated support coverage.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function setFaqItem(item) {
+                const parent = item.parentElement;
+                const openIcon = 'assets/imgRemoveCircleHalfDot.svg';
+                const closedIcon = 'assets/imgAddCircleHalfDot.svg';
+
+                parent.querySelectorAll('.item').forEach((entry) => {
+                    entry.classList.remove('open');
+                    const icon = entry.querySelector('img');
+                    if (icon) {
+                        icon.src = closedIcon;
+                        icon.alt = 'expand';
+                    }
+                });
+
+                item.classList.add('open');
+                const activeIcon = item.querySelector('img');
+                if (activeIcon) {
+                    activeIcon.src = openIcon;
+                    activeIcon.alt = 'collapse';
+                }
+            }
+        </script>
+
+        <section class="cta-footer">
+            <div class="cta-card wrap-1230" style=" background: url(assets/section-bg.png); background-size:contain; background-blend-mode: overlay;">
+                <h2>Reclaim Your Team’s Peak <span>Productivity</span></h2>
+                <p>Empower your team with a centralized platform designed to connect people, simplify complex workflows,
+                    and help everyone stay focused, productive, and aligned.</p>
+                <div class="btn-row">
+                    <button class="btn dark">Start free Trial</button>
+                    <button class="btn light">Book a Demo</button>
+                </div>
+                <aside class="mini-card">
+                    <div class="icons"><img src="assets/imgSolarCodeFileBold.svg" alt=""><img
+                            src="assets/imgMdiFileCad.svg" alt=""><img
+                            src="assets/imgFluentTaskListSquareSparkle20Filled.svg" alt=""></div>
+                    <h4>Good Morning, <span>Sayra ali!</span></h4>
+                    <p>You have 12 tasks due today</p>
+                </aside>
+            </div>
+
+            <footer>
+                <div class="wrap-1480 footer-grid">
+                    <div>
+                        <img class="logo" src="assets/imgTaxky1.svg" alt="Taxky">
+                        <h3>Is the modern task management platform for <span>productive teams.</span></h3>
+                        <div class="socials"><img src="assets/imgGroup1.svg" alt=""><img
+                                src="assets/imgFamiconsLogoBehance.svg" alt=""><img
+                                src="assets/imgEntypoSocialLinkedinWithCircle.svg" alt=""><img
+                                src="assets/imgAntDesignInstagramFilled.svg" alt=""><img
+                                src="assets/imgFormkitTwitter.svg" alt=""></div>
+                    </div>
+                    <div>
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="feature.html">Features</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">Know Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Resources</h5>
+                        <ul>
+                            <li>Documentation</li>
+                            <li>Help Center</li>
+                            <li>Community</li>
+                            <li>API Integrate</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Contact Info</h5>
+                        <ul>
+                            <li>Privacy</li>
+                            <li>Teams</li>
+                            <li>Security</li>
+                            <li>GDPR</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap-1480 footer-bottom">
+                    <p>© 2025 Office by @taxky. All rights reserved.</p>
+                    <p>Privacy Policy • Terms &amp; Condition • Help &amp; Support</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

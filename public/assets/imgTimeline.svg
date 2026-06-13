@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="timeline">
+<path id="Vector" d="M19.9993 36.6667C21.8403 36.6667 23.3327 35.1743 23.3327 33.3333C23.3327 31.4923 21.8403 30 19.9993 30C18.1583 30 16.666 31.4923 16.666 33.3333C16.666 35.1743 18.1583 36.6667 19.9993 36.6667Z" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M20.0007 3.33325C14.938 3.33325 10.834 7.4373 10.834 12.4999C10.834 16.6959 13.6532 20.2333 17.5007 21.3216L20.0007 24.9999L22.5007 21.3216C26.3482 20.2333 29.1673 16.6959 29.1673 12.4999C29.1673 7.4373 25.0633 3.33325 20.0007 3.33325Z" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M20 8.33333V12.5L22.5 14.1667" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M23.3333 33.3333H35M16.6667 33.3333H5" stroke="var(--stroke-0, white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

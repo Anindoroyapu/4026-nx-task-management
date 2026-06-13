@@ -1,0 +1,304 @@
+@import url("./style.css");
+
+:root {
+  --ink: #141414;
+  --muted: #686868;
+  --line: #f1f1f1;
+  --line2: #f6f5f5;
+  --bg-soft: #f6f6f8;
+  --violet: #7556fd;
+  --shadow: 0 4px 40px rgba(20, 20, 20, 0.12);
+  --shadow-soft: 0 4px 80px rgba(117, 86, 253, 0.08);
+}
+@font-face {
+  font-family: "Britti";
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Bold-BF6757bfd4a96ed.otf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Britti";
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
+    format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Britti";
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf")
+    format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Britti";
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Light-BF6757bfd494951.otf")
+    format("truetype");
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--ink);
+  font-family: "Manrope", "Britti Sans Trial", sans-serif;
+}
+h1,
+h2{
+  font-family:"Britti", "Britti Sans Trial", sans-serif;
+}
+.wrap-1480 {
+  width: min(1480px, calc(100% - 48px));
+}
+.wrap-1230 {
+  width: min(1230px, calc(100% - 48px));
+}
+
+.d2 {
+  transform: scaleX(-1);
+}
+.top-nav {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  color: #868686;
+  font-size: 16px;
+  font-weight: 700;
+}
+.title-box h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+}
+.title-box h1 span,
+.faq-left h2 span,
+.cta-card h2 span,
+footer h3 span,
+.mini-card h4 span {
+  color: var(--violet);
+  font-family: "Playfair Display", "Behind The Nineties Sans", serif;
+  font-style: italic;
+}
+.title-box p {
+  color: var(--muted);
+}
+.billing-toggle .active {
+  color: var(--violet);
+}
+.billing-toggle .active span {
+  background: var(--violet);
+}
+.pricing-cards {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.card {
+  border: 2px solid var(--line);
+  box-shadow: 0 0 80px rgba(20, 20, 20, 0.12);
+}
+.card.glow::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 144px;
+  height: 144px;
+  border-radius: 24px;
+  background: url("/assets/imgRectangle28.jpg") center/cover no-repeat;
+  opacity: 0.2;
+  filter: blur(24px);
+}
+.card > p {
+  line-height: 1.25;
+}
+.price {
+  color: var(--violet);
+}
+.btn.light {
+  color: var(--ink);
+}
+.btn.dark {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 0.2) 26.738%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    #141414;
+  box-shadow: var(--shadow);
+}
+.roi-left p {
+  color: var(--muted);
+}
+.slider span {
+  color: var(--muted);
+}
+.slider i {
+  background: linear-gradient(90deg, var(--violet) 0 54%, #f0f0f0 54% 100%);
+}
+.compare > p {
+  color: var(--muted);
+}
+.compare tbody td {
+  color: var(--muted);
+}
+.compare tbody td:first-child {
+  border-left: 1px solid #f7f7f7;
+  border-radius: 8px 0 0 8px;
+}
+.compare tbody td:last-child {
+  border-right: 1px solid #f7f7f7;
+  border-radius: 0 8px 8px 0;
+}
+.compare td:not(:first-child) {
+  text-align: center;
+}
+.faq::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  pointer-events: none;
+}
+.faq-wrap {
+  grid-template-columns: 660px 727px;
+}
+.faq-left h2 {
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+}
+.faq-left p {
+  color: var(--muted);
+}
+.item h4 {
+  line-height: 1.25;
+}
+.item p {
+  color: var(--muted);
+}
+.item.open p {
+  display: block;
+}
+.cta-card {
+  box-shadow: var(--shadow-soft);
+  background: #fff url("/assets/imgFrame2147229796.jpg") center/cover
+    no-repeat;
+}
+.cta-card h2 {
+  font-size: clamp(34px, 5vw, 60px);
+  line-height: 1.1;
+}
+.cta-card p {
+  color: var(--muted);
+}
+.mini-card {
+  transform: rotate(2deg);
+  box-shadow: var(--shadow);
+}
+.icons img {
+  box-shadow: var(--shadow);
+}
+.socials {
+  background: rgba(255, 255, 255, 0.08);
+}
+.socials img:nth-child(3) {
+  background: var(--violet);
+}
+footer h3 {
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.1;
+}
+.footer-grid {
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1400px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .roi-box {
+    grid-template-columns: 1fr;
+  }
+  .roi-right h3 {
+    font-size: 42px;
+  }
+  .faq-wrap {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrap-1480,
+  .wrap-1230 {
+    width: calc(100% - 24px);
+  }
+  .top-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .top-nav ul {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .title-box p,
+  .faq-left p,
+  .cta-card p {
+    font-size: 16px;
+  }
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    height: auto;
+  }
+  .compare {
+    overflow-x: auto;
+  }
+  .compare table {
+    min-width: 760px;
+  }
+  .faq-left {
+    gap: 24px;
+  }
+  .item h4 {
+    font-size: 18px;
+  }
+  .cta-card {
+    padding: 34px 20px;
+    margin-bottom: -120px;
+  }
+  .mini-card {
+    position: static;
+    width: 100%;
+    transform: none;
+    margin-top: 16px;
+  }
+  footer {
+    padding-top: 200px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  footer h5,
+  footer ul,
+  .footer-bottom {
+    font-size: 14px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+}

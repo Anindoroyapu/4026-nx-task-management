@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="add-circle-half-dot">
+<path id="Vector" d="M15 2.5C21.9035 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9035 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15M11.1363 3.10859C9.875 3.5181 8.70169 4.1227 7.65191 4.88676M4.88679 7.65188C4.12257 8.70185 3.5179 9.8754 3.10838 11.1369" stroke="var(--stroke-0, #CFCFD2)" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M15 10V20M20 15H10" stroke="var(--stroke-0, #CFCFD2)" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

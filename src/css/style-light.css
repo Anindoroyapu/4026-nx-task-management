@@ -1,0 +1,243 @@
+:root {
+  --bg: #ffffff;
+  --line: #ececf3;
+  --text: #171826;
+  --muted: #66677b;
+  --accent: #7556fd;
+}
+
+body {
+  color: var(--text);
+  background: radial-gradient(
+      1200px 600px at 50% -100px,
+      #eef0ff 0%,
+      #ffffff 62%
+    )
+    fixed;
+}
+
+.main-nav li {
+  color: #7d7f90;
+}
+
+.main-nav li:hover,
+.main-nav li:hover > a {
+  color: var(--accent) !important;
+}
+
+.main-nav li.active {
+  background: #ffffff;
+  border-color: #ececf3;
+  color: var(--accent);
+  box-shadow: 0 4px 24px rgba(18, 18, 32, 0.08);
+}
+
+.main-nav li.active > a {
+  color: var(--accent);
+}
+
+.mode-toggle {
+  /* background: #15162a; */
+  /* border-color: #15162a; */
+  color: #fff;
+}
+
+.pill {
+  color: #7f8198;
+  border-color: #e9eaf5;
+  background: #f4f5fb;
+}
+
+.hero > p,
+.section-title p,
+.faq-left p,
+.cta-card > p {
+  color: #6f7186;
+}
+
+.btn-dark {
+  background: #15162a;
+  color: #fff;
+}
+
+.btn-light {
+  color: #15162a;
+  background: #fff;
+  border-color: #e5e7f0;
+}
+
+.partner-logos div {
+  border-color: #ececf3;
+  background: #ffffff;
+}
+
+.hero-preview {
+  border-color: #ececf3;
+  background: linear-gradient(180deg, #f6f7ff 0%, #f2f4ff 100%);
+  box-shadow: 0 14px 40px rgba(22, 24, 42, 0.08);
+}
+
+.hero-preview img {
+  border-color: #e7e9f6;
+}
+
+.capabilities,
+.platform,
+/* .environment, */
+.pricing,
+.faq {
+  background: #ffffff;
+}
+
+.cap-card,
+.feature-grid article,
+.pricing-grid article,
+.env-card,
+.env-body aside,
+.faq-item {
+  background: #ffffff;
+  border-color: #e9eaf4;
+}
+
+.pricing .billing-toggle {
+  border-color: #e9eaf4;
+  background: #f4f5fb;
+}
+
+.pricing .billing-toggle button {
+  color: #62647c;
+}
+
+.pricing .billing-toggle .active {
+  background: #fff;
+  color: var(--accent);
+  border-color: #fafafa;
+}
+
+.pricing .billing-toggle .active span {
+  background: var(--accent);
+  color: #fff;
+}
+
+.mock-upload,
+.upload-row,
+.drop-row {
+  background: #ffffff;
+  border-color: #e9eaf4;
+}
+
+.upload-row small,
+.pricing-grid p,
+.pricing-grid ul,
+.faq-item p,
+.env-title span,
+.feature-grid p,
+.cap-card p {
+  color: #6f7186;
+}
+
+.cap-card h3,
+.feature-grid h4,
+.platform-head h2,
+.faq-left h2,
+footer h3,
+footer h5,
+footer ul,
+.footer-bottom,
+.faq-item h4,
+.pricing-grid h3,
+.pricing-grid h4 {
+  color: #171826;
+}
+
+.feature-grid .shot,
+.cap-card .cover {
+  border-color: #e1e3f1;
+}
+
+.segment-tabs {
+  border-color: #e6e8f3;
+  background: #f4f5fb;
+}
+
+.segment-tabs span {
+  color: #62647c;
+}
+
+.segment-tabs span.on {
+  color: #fff;
+}
+
+.env-body button {
+  border-color: #e4e7f2;
+  background: #ffffff;
+  color: #2a2b42;
+}
+
+.env-body button.active {
+  color: #fff;
+  background: var(--accent);
+}
+
+.price {
+  color: var(--accent);
+}
+
+.pricing-grid .btn.light {
+  background: #e7e7e7;
+  color: #1f2138;
+}
+
+.pricing-grid .btn.dark {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 0.2) 26%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    #141414;
+  color: #fff;
+}
+
+.pricing-grid article {
+  box-shadow: 0 4px 40px rgba(20, 20, 20, 0.06);
+}
+
+.faq-item {
+  background: #f6f7fd;
+}
+
+.cta-card {
+  border-color: #ececf3;
+  background: linear-gradient(180deg, #f8f9ff 0%, #f2f4ff 100%);
+  box-shadow: 0 4px 80px rgba(117, 86, 253, 0.08);
+}
+
+.mini-badge {
+  border-color: #e6e7f2;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(18, 18, 32, 0.08);
+}
+
+.mini-icons img {
+  border-color: #ebecef;
+  background: #fff;
+}
+
+.mini-badge p {
+  color: #7c7d90;
+}
+
+footer {
+  background: #141414;
+  border-top: 1px solid #e5e7f3;
+  color: white;
+}
+
+.socials {
+  background: #141414;
+}
+
+.footer-bottom {
+  color: #5f6178;
+}
