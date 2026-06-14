@@ -1,14 +1,9 @@
 "use client"
 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 export default function AboutPage() {
-  function w3_open() {
-    document.getElementById("mySidebar")!.style.display = "block";
-  }
-
-  function w3_close() {
-    document.getElementById("mySidebar")!.style.display = "none";
-  }
-
   return (
     <main className="about-page">
       <img className="decor decor-top-left" src="/assets/imgVector.svg" alt="" />
@@ -20,50 +15,7 @@ export default function AboutPage() {
         {/* <img className="tick tick-left" src="/assets/imgGroup7.svg" alt="" />
         <img className="tick tick-right" src="/assets/imgGroup8.svg" alt="" /> */}
 
-        <nav>
-          <div className="main-nav container-wide">
-            <img className="logo" src="/assets/taxky.png" alt="Taxky" />
-            <div className="nav-right">
-              <ul>
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/features">Features</a></li>
-                <li><a href="/pricing">Pricing</a></li>
-                <li className="active"><a href="/about">Know Us</a></li>
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-              <button className="mode-toggle" type="button" onClick={() => window.location.href = '/about-dark'}>
-                <img src="/assets/sun-icon.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </nav>
-
-        <div style={{ display: "flex", justifyContent: "start", backgroundColor: "black", width: "100%" }}>
-          <div className="w3-sidebar w3-bar-block w3-border-right" style={{ display: "none", zIndex: 1000 }} id="mySidebar">
-            <div className="main-nav" style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "20px", alignItems: "start", justifyItems: "start" }}>
-              <button onClick={w3_close} className="w3-bar-item w3-large">Close ×</button>
-              <a href="/" className="nav-item active">Home Page</a>
-              <a href="/features">Features</a>
-              <a href="/pricing">Pricing</a>
-              <a href="/about">Know Us</a>
-              <a href="/contact">Contact</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="mobile-header w3-white">
-          <a className="brand" href="/" style={{ paddingLeft: "10px" }} aria-label="AppFlow home">
-            <img className="logo" src="/assets/taxky.png" alt="Taxky" style={{ height: "30px", width: "auto" }} />
-          </a>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <button className="mode-toggle" type="button" onClick={() => window.location.href = '/dark'}>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.5833 10.3987C15.5836 10.9324 14.4417 11.2351 13.2292 11.2351C9.29092 11.2351 6.09827 8.04245 6.09827 4.10407C6.09827 2.89158 6.40087 1.74976 6.93469 0.750031C3.38971 1.58085 0.75 4.76264 0.75 8.56095C0.75 12.9916 4.34175 16.5834 8.77242 16.5834C12.5707 16.5834 15.7525 13.9437 16.5833 10.3987Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-            <button className="w3-button w3-xlarge" onClick={w3_open}>☰</button>
-          </div>
-        </div>
+        <Header active="about" isDark={false} />
 
         <div className="hero container-1230">
           <h1>Building the Future of Work Management for <span>Modern Teams.</span></h1>
@@ -174,37 +126,7 @@ export default function AboutPage() {
           </aside>
         </div>
 
-        <footer>
-          <div className="footer-grid container-1480">
-            <div className="left">
-              <img className="logo" src="/assets/imgTaxky1.svg" alt="Taxky" />
-              <h3>Is the modern task management platform for <span>productive teams.</span></h3>
-              <div className="socials">
-                <span><img src="/assets/imgGroup2.svg" alt="" /></span>
-                <span><img src="/assets/imgFamiconsLogoBehance.svg" alt="" /></span>
-                <span className="active"><img src="/assets/imgEntypoSocialLinkedinWithCircle.svg" alt="" /></span>
-                <span><img src="/assets/imgAntDesignInstagramFilled.svg" alt="" /></span>
-                <span><img src="/assets/imgFormkitTwitter.svg" alt="" /></span>
-              </div>
-            </div>
-            <div>
-              <h4>Quick Links</h4>
-              <ul><li><a href="/">Home Page</a></li><li><a href="/features">Features</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/about">Know Us</a></li><li><a href="/contact">Contact Us</a></li></ul>
-            </div>
-            <div>
-              <h4>Resources</h4>
-              <ul><li>Documentation</li><li>Help Center</li><li>Community</li><li>API Integrate</li><li>Product Design</li></ul>
-            </div>
-            <div>
-              <h4>Contact Info</h4>
-              <ul><li>Privacy</li><li>Teams</li><li>Security</li><li>GDPR</li></ul>
-            </div>
-          </div>
-          <div className="footer-bottom container-1480">
-            <p>© 2025 Office by @taxky. All rights reserved.</p>
-            <div><span>Privacy Policy</span><span>Terms & Condition</span><span>Help & Support</span></div>
-          </div>
-        </footer>
+        <Footer logoSrc="/assets/imgTaxky1.svg" containerClass="container-1480" socialSrc="/assets/imgGroup2.svg" />
       </section>
     </main>
   )

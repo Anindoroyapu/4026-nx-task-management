@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 function setBillingMode(mode: string) {
   const isAnnual = mode === "annual";
@@ -46,14 +48,6 @@ function setFaqItem(item: HTMLElement) {
 }
 
 export default function PricingPage() {
-  function w3_open() {
-    document.getElementById("mySidebar")!.style.display = "block";
-  }
-
-  function w3_close() {
-    document.getElementById("mySidebar")!.style.display = "none";
-  }
-
   useEffect(() => {
     setBillingMode("annual");
   }, []);
@@ -63,51 +57,7 @@ export default function PricingPage() {
       <img className="block max-w-full absolute w-[216px] h-[216px] top-[303px] left-0 decor d1" src="/assets/imgVector.svg" alt="" />
       <img className="block max-w-full absolute w-[216px] h-[216px] top-[303px] right-0 decor d2" src="/assets/imgVector.svg" alt="" />
 
-      <nav>
-        <div className="main-nav container-wide">
-          <img className="block max-w-full w-[125px] h-[34px] logo" src="/assets/taxky.png" alt="Taxky" />
-          <div className="flex items-center gap-3 nav-right">
-            <ul>
-              <li><a href="/">Home Page</a></li>
-              <li><a href="/features">Features</a></li>
-              <li className="active"><a href="/pricing">Pricing</a></li>
-              <li><a href="/about">Know Us</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-
-            <button className="mode-toggle" type="button" onClick={() => { window.location.href = "/pricing-dark" }}> <img className="block max-w-full" src="/assets/sun-icon.svg" alt="" />
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <div className="flex justify-start bg-black w-full" style={{ display: "flex", justifyContent: "start", backgroundColor: "black", width: "100%" }}>
-        <div className="hidden z-[1000] w3-sidebar w3-bar-block w3-border-right" style={{ display: "none", zIndex: 1000 }} id="mySidebar">
-          <div className="p-5 flex flex-col gap-5 items-start justify-items-start main-nav"
-            style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "20px", alignItems: "start", justifyItems: "start" }}>
-            <button onClick={w3_close} className="w3-bar-item w3-large">Close ×</button>
-            <a href="/">Home Page</a>
-            <a href="/features">Features</a>
-            <a href="/pricing" className="nav-item active">Pricing</a>
-            <a href="/about">Know Us</a>
-            <a href="/contact">Contact</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="mobile-header w3-white">
-        <a className="pl-2.5 brand" href="/" style={{ paddingLeft: "10px" }} aria-label="AppFlow home">
-          <img className="block max-w-full w-[125px] h-[34px] h-[30px] w-auto logo" src="/assets/taxky.png" alt="Taxky" style={{ height: "30px", width: "auto" }} />
-        </a>
-        <div className="flex items-center" style={{ display: "flex", alignItems: "center" }}>
-          <button className="mode-toggle" type="button" onClick={() => { window.location.href = "/dark" }}>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.5833 10.3987C15.5836 10.9324 14.4417 11.2351 13.2292 11.2351C9.29092 11.2351 6.09827 8.04245 6.09827 4.10407C6.09827 2.89158 6.40087 1.74976 6.93469 0.750031C3.38971 1.58085 0.75 4.76264 0.75 8.56095C0.75 12.9916 4.34175 16.5834 8.77242 16.5834C12.5707 16.5834 15.7525 13.9437 16.5833 10.3987Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
-          <button className="w3-button w3-xlarge" onClick={w3_open}>☰</button>
-        </div>
-      </div>
+      <Header active="pricing" isDark={false} />
 
       <section className="pt-[112px] pb-[52px] grid justify-items-center gap-6 mx-auto hero wrap-1480">
         <div className="text-center w-full max-w-[910px] title-box">
@@ -302,7 +252,7 @@ export default function PricingPage() {
           <div className="grid gap-12 faq-left">
             <h2 className="text-[55px] m-0">Your <span>Questions</span> About Workflow Management, Answered</h2>
             <p className="text-xl m-0">Explore helpful insights and solutions to streamline the way your team works.</p>
-            <button className="border-0 rounded-full px-5 py-3.5 text-base font-bold text-white w-fit btn dark" style={{ width: "fit-content" }}>Contact Us</button>
+            <button className="border-0 rounded-full px-5 py-3.5 text-base font-bold text-white w-fit btn dark">Contact Us</button>
           </div>
           <div className="grid gap-2 faq-right">
             <article className="relative border-[1.5px] border-[#f1f1f1] rounded-2xl p-6 cursor-pointer item" onClick={(e) => setFaqItem(e.currentTarget)}>
@@ -348,48 +298,7 @@ export default function PricingPage() {
           </aside>
         </div>
 
-        <footer className="bg-[#141414] text-white pt-[306px] pb-10">
-          <div className="grid gap-12 mx-auto wrap-1480 footer-grid">
-            <div>
-              <img className="block max-w-full w-[125px] h-[34px] logo" src="/assets/imgTaxky1.svg" alt="Taxky" />
-              <h3 className="m-0 mt-6">Is the modern task management platform for <span>productive teams.</span></h3>
-              <div className="mt-6 flex gap-1 p-1 rounded-full w-fit socials"><img className="block max-w-full w-10 h-10 p-[7px] rounded-[100px] bg-[#141414]" src="/assets/imgGroup1.svg" alt="" /><img className="block max-w-full w-10 h-10 p-[7px] rounded-[100px] bg-[#141414]" src="/assets/imgFamiconsLogoBehance.svg" alt="" /><img className="block max-w-full w-10 h-10 p-[7px] rounded-[100px] bg-[#141414]" src="/assets/imgEntypoSocialLinkedinWithCircle.svg" alt="" /><img className="block max-w-full w-10 h-10 p-[7px] rounded-[100px] bg-[#141414]" src="/assets/imgAntDesignInstagramFilled.svg" alt="" /><img className="block max-w-full w-10 h-10 p-[7px] rounded-[100px] bg-[#141414]" src="/assets/imgFormkitTwitter.svg" alt="" /></div>
-            </div>
-            <div>
-              <h5 className="text-xl m-0 mb-2.5">Quick Links</h5>
-              <ul className="m-0 pl-[22px] text-[#b1b1b1] grid gap-[6px] text-xl">
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/features">Features</a></li>
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/about">Know Us</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-xl m-0 mb-2.5">Resources</h5>
-              <ul className="m-0 pl-[22px] text-[#b1b1b1] grid gap-[6px] text-xl">
-                <li>Documentation</li>
-                <li>Help Center</li>
-                <li>Community</li>
-                <li>API Integrate</li>
-                <li>Product Design</li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-xl m-0 mb-2.5">Contact Info</h5>
-              <ul className="m-0 pl-[22px] text-[#b1b1b1] grid gap-[6px] text-xl">
-                <li>Privacy</li>
-                <li>Teams</li>
-                <li>Security</li>
-                <li>GDPR</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-20 flex justify-between gap-5 text-xl font-bold mx-auto wrap-1480 footer-bottom">
-            <p className="m-0">© 2025 Office by @taxky. All rights reserved.</p>
-            <p className="m-0">Privacy Policy • Terms & Condition • Help & Support</p>
-          </div>
-        </footer>
+        <Footer logoSrc="/assets/imgTaxky1.svg" containerClass="wrap-1480" socialSrc="/assets/imgGroup1.svg" />
       </section>
     </div>
   );

@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   useEffect(() => {
@@ -21,50 +23,7 @@ export default function HomePage() {
 
   return (
     <div className="overflow-hidden page-shell">
-      <nav>
-        <div className="main-nav container-wide">
-          <img className="logo" src="/assets/taxky.png" alt="Taxky" />
-          <div className="nav-right">
-            <ul>
-              <li className="active"><a href="/">Home Page</a></li>
-              <li><a href="/features">Features</a></li>
-              <li><a href="/pricing">Pricing</a></li>
-              <li><a href="/about">Know Us</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-            <button className="mode-toggle" type="button" onClick={() => { window.location.href = "/dark"; }}>
-              <img src="/assets/sun-icon.svg" alt="" />
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <div className="flex justify-start w-full" style={{ display: "flex", justifyContent: "start", backgroundColor: "black", width: "100%" }}>
-        <div className="w3-sidebar w3-bar-block w3-border-right" style={{ display: "none", zIndex: 1000 }} id="mySidebar">
-          <div className="flex flex-col gap-5 items-start p-5 main-nav" style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "20px", alignItems: "start", justifyItems: "start !important" }}>
-            <button onClick={() => { const el = document.getElementById("mySidebar"); if (el) el.style.display = "none"; }} className="w3-bar-item w3-large">Close &times;</button>
-            <a href="/" className="nav-item active">Home Page</a>
-            <a href="/features">Features</a>
-            <a href="/pricing">Pricing</a>
-            <a href="/about">Know Us</a>
-            <a href="/contact">Contact</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="mobile-header w3-white">
-        <a className="pl-[10px] brand" href="/" style={{ paddingLeft: "10px" }} aria-label="AppFlow home">
-          <img className="h-[30px] logo" src="/assets/taxky.png" alt="Taxky" style={{ height: "30px", width: "auto" }} />
-        </a>
-        <div className="flex items-center" style={{ display: "flex", alignItems: "center" }}>
-          <button className="mode-toggle" type="button" onClick={() => { window.location.href = "/dark"; }}>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.5833 10.3987C15.5836 10.9324 14.4417 11.2351 13.2292 11.2351C9.29092 11.2351 6.09827 8.04245 6.09827 4.10407C6.09827 2.89158 6.40087 1.74976 6.93469 0.750031C3.38971 1.58085 0.75 4.76264 0.75 8.56095C0.75 12.9916 4.34175 16.5834 8.77242 16.5834C12.5707 16.5834 15.7525 13.9437 16.5833 10.3987Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
-          <button className="w3-button w3-xlarge" onClick={() => { const el = document.getElementById("mySidebar"); if (el) el.style.display = "block"; }}>☰</button>
-        </div>
-      </div>
+      <Header active="home" isDark={false} />
 
       <section className="text-center pt-28 hero container-wide" data-animate="fade-up" style={{ background: "url(/assets/home-page.png)", backgroundSize: "contain", backgroundBlendMode: "overlay" }}>
         <div className="mx-auto w-fit text-xs rounded-full inline-flex items-center gap-[10px] font-semibold px-[14px] py-[6px] pill">
@@ -295,52 +254,7 @@ export default function HomePage() {
             <p className="mt-2 text-sm">You have 12 tasks due today</p>
           </div>
         </div>
-        <footer>
-          <div className="flex justify-between container-wide" style={{ display: "flex", justifyContent: "space-between" }}>
-            <div>
-              <div>
-                <img src="/assets/imgTaxky.svg" alt="Taxky" className="logo" />
-                <h3>Is the modern task management platform for <span>productive teams.</span></h3>
-                <div className="socials"><img src="/assets/imgGroup.svg" alt="" /><img src="/assets/imgFamiconsLogoBehance.svg" alt="" /><img src="/assets/imgEntypoSocialLinkedinWithCircle.svg" alt="" /><img src="/assets/imgAntDesignInstagramFilled.svg" alt="" /><img src="/assets/imgFormkitTwitter.svg" alt="" /></div>
-              </div>
-            </div>
-            <div className="flex gap-12" style={{ display: "flex", gap: "48px" }}>
-              <div>
-                <h5>Quick Links</h5>
-                <ul>
-                  <li><a href="/">Home Page</a></li>
-                  <li><a href="/features">Features</a></li>
-                  <li><a href="/pricing">Pricing</a></li>
-                  <li><a href="/about">Know Us</a></li>
-                  <li><a href="/contact">Contact Us</a></li>
-                </ul>
-              </div>
-              <div>
-                <h5>Resources</h5>
-                <ul>
-                  <li>Documentation</li>
-                  <li>Help Center</li>
-                  <li>Community</li>
-                  <li>API Integrate</li>
-                  <li>Product Design</li>
-                </ul>
-              </div>
-              <div>
-                <h5>Contact Info</h5>
-                <ul>
-                  <li>Privacy</li>
-                  <li>Teams</li>
-                  <li>Security</li>
-                  <li>GDPR</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="container-wide footer-bottom">
-            <p>&copy; 2025 Office by @taxky. All rights reserved.</p>
-            <p>Privacy Policy &bull; Terms &amp; Condition &bull; Help &amp; Support</p>
-          </div>
-        </footer>
+        <Footer />
       </section>
     </div>
   );
