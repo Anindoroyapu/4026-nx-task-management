@@ -12,25 +12,25 @@
 }
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Bold-BF6757bfd4a96ed.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Bold-BF6757bfd4a96ed.otf")
     format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
     format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf")
     format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Light-BF6757bfd494951.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Light-BF6757bfd494951.otf")
     format("truetype");
   font-weight: 400;
 }
@@ -204,7 +204,7 @@ footer h3 span,
   width: 144px;
   height: 144px;
   border-radius: 24px;
-  background: url("../assets/imgRectangle28.jpg") center/cover no-repeat;
+  background: url("/assets/imgRectangle28.jpg") center/cover no-repeat;
   opacity: 0.2;
   filter: blur(24px);
 }
@@ -491,7 +491,7 @@ footer h3 span,
   border: 1.5px solid #f5f5f7;
   border-radius: 20px;
   box-shadow: var(--shadow-soft);
-  background: #fff url("../assets/imgFrame2147229796.jpg") center/cover
+  background: #fff url("/assets/imgFrame2147229796.jpg") center/cover
     no-repeat;
   text-align: center;
   padding: 80px;

@@ -15,28 +15,28 @@ button {
 
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
     format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Semibold-BF6757bfd443a8a.otf")
     format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf")
     format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Britti";
-  src: url("../assets/font/britti-sans-font-family/BrittiSansTrial-Light-BF6757bfd494951.otf")
+  src: url("/assets/font/britti-sans-font-family/BrittiSansTrial-Light-BF6757bfd494951.otf")
     format("truetype");
   font-weight: 400;
 }
@@ -594,7 +594,7 @@ footer h3 span,
 
 .environment {
   /* background: linear-gradient(180deg, #0a0f37 0%, #06071f 100%); */
-  /* background: url("../assets/section-bg.png") no-repeat center center; */
+  /* background: url("/assets/section-bg.png") no-repeat center center; */
   background-size: cover;
   background-blend-mode: overlay;
 }
@@ -752,7 +752,7 @@ footer h3 span,
   width: 144px;
   height: 144px;
   border-radius: 24px;
-  background: url("../assets/imgRectangle28.jpg") center/cover no-repeat;
+  background: url("/assets/imgRectangle28.jpg") center/cover no-repeat;
   opacity: 0.2;
   filter: blur(24px);
   pointer-events: none;
@@ -912,7 +912,7 @@ footer h3 span,
   border: 1.5px solid #313353;
   border-radius: 20px;
   padding: 70px;
-  background: url(../assets/smart-bg.png);
+  background: url(/assets/smart-bg.png);
   box-shadow: 0 4px 80px rgba(117, 86, 253, 0.12);
   text-align: center;
   position: relative;

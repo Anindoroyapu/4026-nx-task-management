@@ -1,36 +1,33 @@
-type Props = {
-  logoSrc?: string;
-  containerClass?: string;
-  socialSrc?: string;
-  isDark?: boolean;
-  children?: React.ReactNode;
-};
-
-export default function Footer({
-  logoSrc = "/assets/imgTaxky.svg",
-  containerClass = "container-wide",
-  socialSrc = "/assets/imgGroup.svg",
-}: Props) {
+export default function Footer() {
   return (
     <footer>
-      <div className={`flex justify-between ${containerClass}`}>
+      <div
+        style={{ display: "flex", justifyContent: "space-between" }}
+        className="container-wide"
+      >
         <div>
-          <img src={logoSrc} alt="Taxky" className="logo" />
-          <h3>Is the modern task management platform for <span>productive teams.</span></h3>
-          <div className="socials">
-            <img src={socialSrc} alt="" />
-            <img src="/assets/imgFamiconsLogoBehance.svg" alt="" />
-            <img src="/assets/imgEntypoSocialLinkedinWithCircle.svg" alt="" />
-            <img src="/assets/imgAntDesignInstagramFilled.svg" alt="" />
-            <img src="/assets/imgFormkitTwitter.svg" alt="" />
+          <div>
+            <img src="/assets/imgTaxky.svg" alt="Taxky" className="logo" />
+            <h3>
+              Is the modern task management platform for
+              <span>productive teams.</span>
+            </h3>
+            <div className="socials">
+              <img src="/assets/imgGroup.svg" alt="" />
+              <img src="/assets/imgFamiconsLogoBehance.svg" alt="" />
+              <img src="/assets/imgEntypoSocialLinkedinWithCircle.svg" alt="" />
+              <img src="/assets/imgAntDesignInstagramFilled.svg" alt="" />
+              <img src="/assets/imgFormkitTwitter.svg" alt="" />
+            </div>
           </div>
         </div>
-        <div className="flex gap-12">
+
+        <div style={{ display: "flex", gap: "48px" }}>
           <div>
             <h5>Quick Links</h5>
             <ul>
               <li><a href="/">Home Page</a></li>
-              <li><a href="/features">Features</a></li>
+              <li><a href="/feature">Features</a></li>
               <li><a href="/pricing">Pricing</a></li>
               <li><a href="/about">Know Us</a></li>
               <li><a href="/contact">Contact Us</a></li>
@@ -57,9 +54,9 @@ export default function Footer({
           </div>
         </div>
       </div>
-      <div className={`${containerClass} footer-bottom`}>
-        <p>&copy; 2025 Office by @taxky. All rights reserved.</p>
-        <p>Privacy Policy &bull; Terms &amp; Condition &bull; Help &amp; Support</p>
+      <div className="container-wide footer-bottom">
+        <p>© 2025 Office by @taxky. All rights reserved.</p>
+        <p>Privacy Policy • Terms &amp; Condition • Help &amp; Support</p>
       </div>
     </footer>
   );
