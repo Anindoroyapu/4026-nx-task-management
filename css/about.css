@@ -217,6 +217,7 @@ footer h3 span,
   letter-spacing: -1.2px;
   line-height: 1.1;
   margin-bottom: 80px;
+  font-weight: 600;
 }
 .timeline-shell {
   position: relative;
@@ -262,6 +263,7 @@ footer h3 span,
 .card h4 span {
   color: var(--accent);
   font-size: 16px;
+  font-weight: 600;
 }
 .card p {
   margin-top: 18px;

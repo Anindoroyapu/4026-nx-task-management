@@ -186,7 +186,7 @@ footer h3 span,
 }
 .card {
   position: relative;
-  height: 600px;
+  /* height: 600px; */
   border: 2px solid var(--line);
   border-radius: 12px;
   background: #fff;
@@ -210,11 +210,14 @@ footer h3 span,
 }
 .card h3 {
   font-size: 20px;
+  font-weight: 600;
+  text-align: left;
 }
 .card > p {
   font-size: 14px;
   color: #666;
   line-height: 1.25;
+  text-align: left;
 }
 .price {
   color: var(--violet);
@@ -262,6 +265,8 @@ footer h3 span,
 .card h4 {
   margin-top: 2px;
   font-size: 20px;
+  font-weight: 600;
+  text-align: left;
 }
 .card ul {
   margin: 0;
@@ -298,6 +303,7 @@ footer h3 span,
 }
 .roi-left h2 {
   font-size: 34px;
+  font-weight: 600;
 }
 .roi-left p {
   margin-top: 4px;
@@ -354,6 +360,7 @@ footer h3 span,
 }
 .compare h2 {
   font-size: 34px;
+  font-weight: 600;
 }
 .compare > p {
   margin-top: 4px;
