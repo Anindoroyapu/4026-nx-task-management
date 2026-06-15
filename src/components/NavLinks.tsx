@@ -1,3 +1,7 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 export const navLinks = [
   { href: "/", label: "Home Page" },
   { href: "/feature", label: "Features" },
@@ -7,10 +11,12 @@ export const navLinks = [
 ];
 
 export function DesktopNavLinks() {
+  const path = usePathname();
+
   return (
     <ul>
       {navLinks.map(({ href, label }) => (
-        <li key={href} className={href === "/" ? "active" : ""}>
+        <li key={href} className={path === href ? "active" : ""}>
           <a href={href}>{label}</a>
         </li>
       ))}
@@ -19,10 +25,12 @@ export function DesktopNavLinks() {
 }
 
 export function SidebarNavLinks() {
+  const path = usePathname();
+
   return (
     <>
       {navLinks.map(({ href, label }) => (
-        <a key={href} href={href} className={href === "/" ? "nav-item active" : "nav-item"}>
+        <a key={href} href={href} className={path === href ? "nav-item active" : "nav-item"}>
           {label}
         </a>
       ))}
