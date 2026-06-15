@@ -9,22 +9,25 @@ import CtaSection from "@/components/home/CtaSection";
 
 export default function FeaturePage() {
   return (
-    <div className="feature-page">
-      <img
-        className="decor decor-top-left"
-        src="/assets/imgVector.svg"
-        alt=""
-      />
-      <img
-        className="decor decor-top-right"
-        src="/assets/imgVector.svg"
-        alt=""
-      />
-      <FeatureHero />
-      <ToolsSection />
-      <AutomationSection />
-      <LogoArcSection />
-      <AdvancedSection />
-    </div>
+    <>
+      <div className="feature-page">
+        <img
+          className="decor decor-top-left"
+          src="/assets/imgVector.svg"
+          alt=""
+        />
+        <img
+          className="decor decor-top-right"
+          src="/assets/imgVector.svg"
+          alt=""
+        />
+        <FeatureHero />
+        <ToolsSection />
+        <AutomationSection />
+        <LogoArcSection />
+        <AdvancedSection />
+      </div>
+      <FeatureCtaSection />
+    </>
   );
 }
