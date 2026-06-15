@@ -5,6 +5,7 @@ import AutomationSection from "@/components/feature/AutomationSection";
 import LogoArcSection from "@/components/feature/LogoArcSection";
 import AdvancedSection from "@/components/feature/AdvancedSection";
 import FeatureCtaSection from "@/components/feature/FeatureCtaSection";
+import CtaSection from "@/components/home/CtaSection";
 
 export default function FeaturePage() {
   return (
@@ -24,7 +25,6 @@ export default function FeaturePage() {
       <AutomationSection />
       <LogoArcSection />
       <AdvancedSection />
-      <FeatureCtaSection />
     </div>
   );
 }
