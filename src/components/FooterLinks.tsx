@@ -1,3 +1,4 @@
+import Link from "next/link";
 type Link = { href?: string; label: string };
 
 const linkGroups: { title: string; links: Link[] }[] = [
@@ -41,7 +42,11 @@ export default function FooterLinks() {
           <ul>
             {group.links.map((link) => (
               <li key={link.label}>
-                {link.href ? <a href={link.href}>{link.label}</a> : link.label}
+                {link.href ? (
+                  <Link href={link.href}>{link.label}</Link>
+                ) : (
+                  link.label
+                )}
               </li>
             ))}
           </ul>
