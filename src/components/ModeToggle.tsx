@@ -1,3 +1,15 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
+function getToggleTarget(path: string) {
+  if (path === "/dark" || path.startsWith("/dark/")) {
+    const rest = path.replace("/dark", "") || "/";
+    return rest;
+  }
+  return "/dark" + (path === "/" ? "" : path);
+}
+
 export function ModeToggleIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -10,14 +22,26 @@ export function ModeToggleIcon() {
 }
 
 export function ModeToggleImg() {
+  const path = usePathname();
+
   return (
     <button
       className="mode-toggle"
       type="button"
-      onClick={() => window.location.href = '/index-dark.html'}
+      onClick={() => { window.location.href = getToggleTarget(path); }}
       aria-label="Toggle dark mode"
     >
       <img src="/assets/sun-icon.svg" alt="" />
+    </button>
+  );
+}
+
+export function ModeToggleSvg() {
+  const path = usePathname();
+
+  return (
+    <button className="mode-toggle" type="button" onClick={() => { window.location.href = getToggleTarget(path); }} aria-label="Toggle dark mode">
+      <ModeToggleIcon />
     </button>
   );
 }

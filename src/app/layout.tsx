@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import "../../css/style-light.css";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Taxky - Task Management",
@@ -25,9 +22,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="page-shell">
-          <Header />
           {children}
-          <Footer />
         </div>
       </body>
     </html>

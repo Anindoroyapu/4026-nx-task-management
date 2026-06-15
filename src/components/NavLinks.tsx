@@ -1,8 +1,9 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const navLinks = [
+const lightLinks = [
   { href: "/", label: "Home Page" },
   { href: "/feature", label: "Features" },
   { href: "/pricing", label: "Pricing" },
@@ -10,12 +11,25 @@ export const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const darkLinks = [
+  { href: "/dark", label: "Home Page" },
+  { href: "/dark/feature", label: "Features" },
+  { href: "/dark/pricing", label: "Pricing" },
+  { href: "/dark/about", label: "Know Us" },
+  { href: "/dark/contact", label: "Contact" },
+];
+
+function getLinks(path: string) {
+  return path.startsWith("/dark") ? darkLinks : lightLinks;
+}
+
 export function DesktopNavLinks() {
   const path = usePathname();
+  const links = getLinks(path);
 
   return (
     <ul>
-      {navLinks.map(({ href, label }) => (
+      {links.map(({ href, label }) => (
         <li key={href} className={path === href ? "active" : ""}>
           <Link href={href}>{label}</Link>
         </li>
@@ -26,10 +40,11 @@ export function DesktopNavLinks() {
 
 export function SidebarNavLinks() {
   const path = usePathname();
+  const links = getLinks(path);
 
   return (
     <>
-      {navLinks.map(({ href, label }) => (
+      {links.map(({ href, label }) => (
         <a
           key={href}
           href={href}
