@@ -237,6 +237,7 @@ nav {
   letter-spacing: -1.4px;
   max-width: 980px;
   margin-inline: auto;
+  font-weight: 600;
 }
 
 .hero h1 span,
@@ -369,6 +370,7 @@ footer h3 span,
   letter-spacing: -1.2px;
   max-width: 900px;
   margin: 0 auto;
+  font-weight: 600;
 }
 
 .section-title p {
@@ -518,6 +520,7 @@ footer h3 span,
   line-height: 1.05;
   letter-spacing: -1.5px;
   max-width: 900px;
+  font-weight: 600;
 }
 
 .segment-tabs {
@@ -574,6 +577,7 @@ footer h3 span,
   margin-top: 12px;
   font-size: 26px;
   line-height: 1.05;
+  font-weight: 600;
 }
 
 .feature-grid p {
@@ -846,6 +850,7 @@ footer h3 span,
   font-size: clamp(44px, 4vw, 65px);
   line-height: 1.04;
   letter-spacing: -1.4px;
+  font-weight: 600;
 }
 
 .faq-left p {
@@ -928,6 +933,7 @@ footer h3 span,
   font-size: 50px;
   line-height: 1.06;
   letter-spacing: -1.2px;
+  font-weight: 600;
 }
 
 .cta-card > p {
@@ -995,7 +1001,8 @@ footer h3 {
   font-size: clamp(44px, 4vw, 16px);
   line-height: 1.05;
   color: white !important;
-  max-width: 628px;
+  max-width: 728px;
+  font-weight: 600;
 }
 
 footer h5 {
