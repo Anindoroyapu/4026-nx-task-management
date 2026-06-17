@@ -1,11 +1,23 @@
+"use client";
+
 import { ModeToggleIcon } from "./ModeToggle";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
+
+function getDarkTarget(path: string) {
+  if (path === "/dark" || path.startsWith("/dark/")) {
+    return path;
+  }
+  return "/dark" + (path === "/" ? "" : path);
+}
 
 export default function MobileHeader({
   onMenuClick,
 }: {
   onMenuClick: () => void;
 }) {
+  const path = usePathname();
+
   return (
     <div className="mobile-header w3-white">
       <Link
@@ -25,7 +37,7 @@ export default function MobileHeader({
         <button
           className="mode-toggle"
           type="button"
-          onClick={() => (window.location.href = "/index-dark.html")}
+          onClick={() => (window.location.href = getDarkTarget(path))}
           aria-label="Toggle dark mode"
         >
           <ModeToggleIcon />

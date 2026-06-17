@@ -1125,27 +1125,27 @@ footer ul {
 
 /* Apply animations to sections */
 .hero {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 .hero .pill {
-  animation: fadeIn 0.6s ease-out 0.2s both;
+  animation: fadeIn 0.3s ease-out 0.2s both;
 }
 
 .hero h1 {
-  animation: fadeInUp 0.8s ease-out 0.3s both;
+  animation: fadeInUp 0.35s ease-out 0.3s both;
 }
 
 .hero > p {
-  animation: fadeInUp 0.8s ease-out 0.4s both;
+  animation: fadeInUp 0.35s ease-out 0.4s both;
 }
 
 .hero-buttons {
-  animation: fadeInUp 0.8s ease-out 0.5s both;
+  animation: fadeInUp 0.35s ease-out 0.5s both;
 }
 
 .partner-logos {
-  animation: fadeInUp 0.8s ease-out 0.6s both;
+  animation: fadeInUp 0.35s ease-out 0.6s both;
 }
 
 .hero-preview {
@@ -1154,15 +1154,15 @@ footer ul {
 
 /* Capabilities section */
 .capabilities {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 .section-title {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+  animation: fadeInUp 0.35s ease-out 0.2s both;
 }
 
 .cap-card {
-  animation: fadeInUp 0.6s ease-out backwards;
+  animation: fadeInUp 0.3s ease-out backwards;
 }
 
 .cap-grid-wide .cap-card:nth-child(1) {
@@ -1192,23 +1192,23 @@ footer ul {
 
 /* Platform section */
 .platform {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 .platform-head {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+  animation: fadeInUp 0.35s ease-out 0.2s both;
 }
 
 .platform-head h2 {
-  animation: fadeInUp 0.6s ease-out 0.2s both;
+  animation: fadeInUp 0.3s ease-out 0.2s both;
 }
 
 .segment-tabs {
-  animation: fadeInUp 0.6s ease-out 0.3s both;
+  animation: fadeInUp 0.3s ease-out 0.3s both;
 }
 
 .feature-grid article {
-  animation: fadeInUp 0.6s ease-out backwards;
+  animation: fadeInUp 0.3s ease-out backwards;
 }
 
 .feature-grid article:nth-child(1) {
@@ -1228,7 +1228,7 @@ footer ul {
 }
 
 .feature-grid article:nth-child(5) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 .feature-grid article:nth-child(6) {
@@ -1250,19 +1250,19 @@ footer ul {
 
 /* Environment section */
 .environment {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 .env-wrap .section-title {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+  animation: fadeInUp 0.35s ease-out 0.2s both;
 }
 
 .env-body aside {
-  animation: slideInLeft 0.8s ease-out 0.3s both;
+  animation: slideInLeft 0.35s ease-out 0.3s both;
 }
 
 .env-card {
-  animation: slideInRight 0.8s ease-out 0.3s both;
+  animation: slideInRight 0.35s ease-out 0.3s both;
 }
 
 .env-body button {
@@ -1276,19 +1276,19 @@ footer ul {
 
 /* Pricing section */
 .pricing {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 .pricing .section-title {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+  animation: fadeInUp 0.35s ease-out 0.2s both;
 }
 
 .billing-toggle {
-  animation: fadeInUp 0.8s ease-out 0.3s both;
+  animation: fadeInUp 0.35s ease-out 0.3s both;
 }
 
 .pricing-grid .card {
-  animation: scaleIn 0.6s ease-out backwards;
+  animation: scaleIn 0.3s ease-out backwards;
 }
 
 .pricing-grid .card:nth-child(1) {
@@ -1321,19 +1321,19 @@ footer ul {
 
 /* FAQ section */
 .faq {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 .faq-left {
-  animation: slideInLeft 0.8s ease-out 0.2s both;
+  animation: slideInLeft 0.35s ease-out 0.2s both;
 }
 
 .faq-right {
-  animation: slideInRight 0.8s ease-out 0.2s both;
+  animation: slideInRight 0.35s ease-out 0.2s both;
 }
 
 .faq-item {
-  animation: fadeInUp 0.6s ease-out backwards;
+  animation: fadeInUp 0.3s ease-out backwards;
 }
 
 .faq-item:nth-child(1) {
@@ -1349,7 +1349,7 @@ footer ul {
 }
 
 .faq-item:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 .faq-item:nth-child(5) {
@@ -1357,7 +1357,7 @@ footer ul {
 }
 
 .faq-item:nth-child(6) {
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
 
 .faq-item {
@@ -1370,19 +1370,19 @@ footer ul {
 
 /* CTA Footer section */
 .cta-footer {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out;
 }
 
 .cta-card {
-  animation: scaleIn 0.8s ease-out 0.2s both;
+  animation: scaleIn 0.35s ease-out 0.2s both;
 }
 
 .cta-card h2 {
-  animation: fadeInUp 0.6s ease-out 0.4s both;
+  animation: fadeInUp 0.3s ease-out 0.4s both;
 }
 
 .cta-card > p {
-  animation: fadeInUp 0.6s ease-out 0.5s both;
+  animation: fadeInUp 0.3s ease-out 0.5s both;
 }
 
 .cta-card:hover {
@@ -1413,43 +1413,43 @@ a {
 
 /* Fade-up animation for scroll trigger */
 [data-animate="fade-up"] {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 [data-animate="fade-up"].in-view {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.35s ease-out forwards;
 }
 
 /* Fade-left animation for scroll trigger */
 [data-animate="fade-left"] {
-  animation: slideInLeft 0.8s ease-out;
+  animation: slideInLeft 0.35s ease-out forwards;
 }
 
 [data-animate="fade-left"].in-view {
-  animation: slideInLeft 0.8s ease-out forwards;
+  animation: slideInLeft 0.35s ease-out forwards;
 }
 
 /* Fade-right animation for scroll trigger */
 [data-animate="fade-right"] {
-  animation: slideInRight 0.8s ease-out;
+  animation: slideInRight 0.35s ease-out forwards;
 }
 
 [data-animate="fade-right"].in-view {
-  animation: slideInRight 0.8s ease-out forwards;
+  animation: slideInRight 0.35s ease-out forwards;
 }
 
 /* Zoom animation for scroll trigger */
 [data-animate="zoom"] {
-  animation: scaleIn 0.8s ease-out;
+  animation: scaleIn 0.35s ease-out forwards;
 }
 
 [data-animate="zoom"].in-view {
-  animation: scaleIn 0.8s ease-out forwards;
+  animation: scaleIn 0.35s ease-out forwards;
 }
 
 /* Staggered animations for child elements in animated sections */
 [data-animate].in-view .cap-card {
-  animation: fadeInUp 0.6s ease-out backwards;
+  animation: fadeInUp 0.3s ease-out backwards;
 }
 
 [data-animate].in-view .cap-grid-wide .cap-card:nth-child(1) {
@@ -1473,7 +1473,7 @@ a {
 }
 
 [data-animate].in-view .feature-grid article {
-  animation: fadeInUp 0.6s ease-out backwards;
+  animation: fadeInUp 0.3s ease-out backwards;
 }
 
 [data-animate].in-view .feature-grid article:nth-child(1) {
@@ -1493,7 +1493,7 @@ a {
 }
 
 [data-animate].in-view .feature-grid article:nth-child(5) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 [data-animate].in-view .feature-grid article:nth-child(6) {
@@ -1501,7 +1501,7 @@ a {
 }
 
 [data-animate].in-view .pricing-grid .card {
-  animation: scaleIn 0.6s ease-out backwards;
+  animation: scaleIn 0.3s ease-out backwards;
 }
 
 [data-animate].in-view .pricing-grid .card:nth-child(1) {
@@ -1521,7 +1521,7 @@ a {
 }
 
 [data-animate].in-view .faq-item {
-  animation: fadeInUp 0.6s ease-out backwards;
+  animation: fadeInUp 0.3s ease-out backwards;
 }
 
 [data-animate].in-view .faq-item:nth-child(1) {
@@ -1537,7 +1537,7 @@ a {
 }
 
 [data-animate].in-view .faq-item:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 [data-animate].in-view .faq-item:nth-child(5) {
@@ -1545,7 +1545,7 @@ a {
 }
 
 [data-animate].in-view .faq-item:nth-child(6) {
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
 
 @media (max-width: 1400px) {

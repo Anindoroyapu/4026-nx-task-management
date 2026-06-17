@@ -11,7 +11,7 @@ export default function DarkAboutPage() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
+            entry.target.classList.add("in-view");
           }
         });
       },

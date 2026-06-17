@@ -1,3 +1,4 @@
+import "@/../css/pricing.css";
 import "@/../css/pricing-dark.css";
 import DarkPricingPage from "@/components/dark/pricing/DarkPricingPage";
 

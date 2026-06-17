@@ -45,13 +45,13 @@ export function SidebarNavLinks() {
   return (
     <>
       {links.map(({ href, label }) => (
-        <a
+        <Link
           key={href}
           href={href}
           className={path === href ? "nav-item active" : "nav-item"}
         >
           {label}
-        </a>
+        </Link>
       ))}
     </>
   );

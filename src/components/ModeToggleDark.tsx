@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function getToggleTarget(path: string) {
@@ -25,17 +24,14 @@ export function ModeToggleImgDark() {
   const path = usePathname();
 
   return (
-    <Link
-      href={getToggleTarget(path)}
+    <button
       className="mode-toggle"
       type="button"
-      // onClick={() => {
-      //   window.location.href = getToggleTarget(path);
-      // }}
+      onClick={() => { window.location.href = getToggleTarget(path); }}
       aria-label="Toggle light mode"
     >
       <img src="/assets/sun-icon.svg" alt="" />
-    </Link>
+    </button>
   );
 }
 
