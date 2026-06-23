@@ -26,28 +26,33 @@ export default function DarkContactPage() {
   }, []);
 
   return (
-    <main className="contact-page">
-      <img className="vector v-left" src="/assets/imgVector.svg" alt="" />
-      <img className="vector v-right" src="/assets/imgVector.svg" alt="" />
+    <>
+      <main className="contact-page">
+        <img className="vector v-left" src="/assets/imgVector.svg" alt="" />
+        <img className="vector v-right" src="/assets/imgVector.svg" alt="" />
 
-      <section className="head-wrap">
-        <img className="hand hand-left" src="/assets/imgEllipse16.svg" alt="" />
-        <img
-          className="hand hand-right"
-          src="/assets/imgEllipse15.svg"
-          alt=""
-        />
-        <img className="badge b-left" src="/assets/imgGroup9.svg" alt="" />
-        <img className="badge b-right" src="/assets/imgGroup8.svg" alt="" />
-        <DarkContactHero />
-      </section>
+        <section className="head-wrap">
+          <img
+            className="hand hand-left"
+            src="/assets/imgEllipse16.svg"
+            alt=""
+          />
+          <img
+            className="hand hand-right"
+            src="/assets/imgEllipse15.svg"
+            alt=""
+          />
+          <img className="badge b-left" src="/assets/imgGroup9.svg" alt="" />
+          <img className="badge b-right" src="/assets/imgGroup8.svg" alt="" />
+          <DarkContactHero />
+        </section>
 
-      <section className="middle container-1480">
-        <DarkOfficeSection />
-        <DarkMessageForm />
-      </section>
-
+        <section className="middle container-1480">
+          <DarkOfficeSection />
+          <DarkMessageForm />
+        </section>
+      </main>
       <DarkContactCtaSection />
-    </main>
+    </>
   );
 }
