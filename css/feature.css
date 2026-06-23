@@ -536,6 +536,7 @@ h2{
   width: 980px;
   max-width: calc(100% - 24px);
   margin: 0 auto;
+  box-shadow: none;
 }
 
 .bubble {

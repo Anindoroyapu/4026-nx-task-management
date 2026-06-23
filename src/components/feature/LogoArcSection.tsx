@@ -14,7 +14,14 @@ const bubbles = [
 
 export default function LogoArcSection() {
   return (
-    <section className="logo-arc" style={{ background: "url(/assets/section-bg.png)", backgroundSize: "contain", backgroundBlendMode: "overlay" }}>
+    <section
+      className="logo-arc"
+      style={{
+        background: "url(/assets/section-bg.png)",
+        backgroundSize: "contain",
+        backgroundBlendMode: "overlay",
+      }}
+    >
       <div className="ring wrap-1480">
         {bubbles.map((b, i) => (
           <div
@@ -26,7 +33,9 @@ export default function LogoArcSection() {
           </div>
         ))}
       </div>
-      <h2>Powerful <span>Productivity</span></h2>
+      <h2>
+        Powerful <span>Productivity</span>
+      </h2>
       <p>Built to simplify work and help teams achieve better results.</p>
       <img className="dot-left" src="/assets/imgEllipse11.svg" alt="" />
       <img className="dot-right" src="/assets/imgEllipse12.svg" alt="" />
