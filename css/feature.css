@@ -751,6 +751,11 @@ footer {
   background: var(--violet);
 }
 
+.socials img:hover {
+  cursor: pointer;
+  background: var(--violet);
+}
+
 footer h5 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -763,6 +768,11 @@ footer ul {
   gap: 6px;
   color: #b1b1b1;
   font-size: 20px;
+}
+
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--violet);
 }
 
 .footer-bottom {

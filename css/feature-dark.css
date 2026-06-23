@@ -45,6 +45,11 @@ footer ul,
   color: var(--muted);
 }
 
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--violet);
+}
+
 .btn-dark {
   background: #fff;
   color: #0d0e23;
@@ -135,5 +140,10 @@ footer h5,
 }
 
 .socials img:nth-child(3) {
+  background: var(--violet);
+}
+
+.socials img:hover {
+  cursor: pointer;
   background: var(--violet);
 }

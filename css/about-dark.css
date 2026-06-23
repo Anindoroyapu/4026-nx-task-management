@@ -141,12 +141,22 @@ footer ul {
   color: #b8bbca;
 }
 
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+
 .socials {
   background: rgba(255, 255, 255, 0.12);
 }
 
 .socials span {
   background: #151931;
+}
+
+.socials span:hover {
+  cursor: pointer;
+  background: var(--accent);
 }
 
 .footer-bottom {

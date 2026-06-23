@@ -414,6 +414,11 @@ footer ul {
   font-size: 20px;
   line-height: 1.2;
 }
+
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
 .socials {
   margin-top: 48px;
   border-radius: 999px;
@@ -434,6 +439,10 @@ footer ul {
   justify-content: center;
 }
 .socials span.active { background: var(--accent); }
+.socials span:hover {
+  cursor: pointer;
+  background: var(--accent);
+}
 .socials img { width: 26px; height: 26px; }
 .footer-bottom {
   margin-top: 80px;

@@ -476,6 +476,11 @@ footer ul {
   gap: 6px;
   font-size: 20px;
 }
+
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
 .socials {
   margin-top: 48px;
   border-radius: 1000px;
@@ -496,6 +501,10 @@ footer ul {
   padding: 7px;
 }
 .socials .on { background: var(--accent); }
+.socials span:hover {
+  cursor: pointer;
+  background: var(--accent);
+}
 .socials img { width: 26px; height: 26px; }
 .footer-bottom {
   margin-top: 80px;

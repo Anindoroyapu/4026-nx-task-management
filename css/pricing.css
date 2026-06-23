@@ -589,6 +589,11 @@ footer h3 {
 .socials img:nth-child(3) {
   background: var(--violet);
 }
+
+.socials img:hover {
+  cursor: pointer;
+  background: var(--violet);
+}
 footer h5 {
   margin: 0 0 10px;
   font-size: 20px;
@@ -600,6 +605,11 @@ footer ul {
   display: grid;
   gap: 6px;
   font-size: 20px;
+}
+
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--violet);
 }
 .footer-bottom {
   margin-top: 80px;

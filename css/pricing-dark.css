@@ -163,3 +163,8 @@ footer {
 .socials img {
   background: #0f1117;
 }
+
+.socials img:hover {
+  cursor: pointer;
+  background: var(--violet);
+}

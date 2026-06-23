@@ -1002,6 +1002,11 @@ footer ul {
   font-size: 16px;
 }
 
+footer ul li a:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+
 .socials {
   margin-top: 24px;
   display: flex;
@@ -1020,6 +1025,11 @@ footer ul {
 }
 
 .socials img:nth-child(3) {
+  background: var(--accent);
+}
+
+.socials img:hover {
+  cursor: pointer;
   background: var(--accent);
 }
 
